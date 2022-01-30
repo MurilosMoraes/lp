@@ -17,6 +17,10 @@
 
     <link rel="stylesheet" href="style.css">
 
+    <!-- icons font -->
+
+    <link rel="stylesheet" href="assets/fonts/style.css">
+
     <!-- FONTS -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,7 +37,7 @@
             <a class="logo" href="#">
                 Panda<span>Apps.</span>
             </a>
-            <p onclick="openNav()" style="font-size: 4rem;">...</p>
+            <div onclick="openNav()" class="icon-menu"></div>
             <div id="menu">
                 <ul onclick="closeNav()">
                     <li class="titles"><a href="#home">Início</a></li>
@@ -50,7 +54,7 @@
     <main>
         <section class="sections background" id="home">
             <div class="img-home">
-                <img src="./assets/imgs/foto-1.jpg" alt="Aplicativo Mobile">
+                <img width="1280" height="720" src="./assets/imgs/foto-1.jpg" alt="Aplicativo Mobile">
             </div>
 
             <div class="container align-center">
@@ -70,7 +74,7 @@
         <section class="sections" id="about">
 
             <div class="before-2">
-                <img src="./assets/imgs/foto-1.jpg" alt="Aplicativo Mobile">
+                <img width="1280" height="720" src="./assets/imgs/foto-2.jpg" alt="Aplicativo Mobile 2">
             </div>
             <div class="container ">
                 <h2 class="titles mg-2rem">Sobre nós</h2>
@@ -121,7 +125,7 @@
 
 
                 <div class="cards">
-                    <img src="./assets/icons/Icon-1.png" alt="icone">
+                    <div class="icon-woman-hair"></div>
 
                     <h2 class="titles mg-1-5rem">Terapia capilar</h2>
 
@@ -134,7 +138,7 @@
 
 
                 <div class="cards">
-                    <img src="./assets/icons/Icon-2.png" alt="icone">
+                    <div class="icon-trim"></div>
 
                     <h2 class="titles mg-1-5rem">Cortes</h2>
 
@@ -147,7 +151,7 @@
                 </div>
 
                 <div class="cards">
-                    <img src="./assets/icons/Icon-3.png" alt="icone">
+                    <div class="icon-cosmetic"></div>
 
                     <h2 class="titles mg-1-5rem">Tratamentos</h2>
 
@@ -203,21 +207,21 @@
                 <div class="contatos">
 
                     <div class="flex-testimonials">
-                        <img src="./assets/icons/phone.png" alt="icone Telefone">
+                        <div class="icon-phone"></div>
                         <p class="general-text">
                             11 99845-6754
                         </p>
                     </div>
 
                     <div class="flex-testimonials">
-                        <img src="./assets/icons/map-pin.png" alt="icone marcador de mapa">
+                        <div class="icon-map-pin"></div>
                         <p class="general-text">
                             R. Amauri Souza, 346
                         </p>
                     </div>
 
                     <div class="flex-testimonials">
-                        <img src="./assets/icons/mail.png" alt="icone carta">
+                        <div class="icon-mail"></div>
                         <p style="margin: 0;" class="general-text">
                             contato@beautysalon.com
                         </p>
@@ -239,9 +243,9 @@
             <br>
             Todos os direitos reservados.
         </p>
-        <img src="./assets/icons/instagram.png" alt="logo instagram">
-        <img src="./assets/icons/facebook.png" alt="logo facebook">
-        <img src="./assets/icons/youtube.png" alt="logo youtube">
+        <div class="icon-instagram"></div>
+        <div class="icon-facebook"></div>
+        <div class="icon-youtube"></div>
     </footer>
 
     <script src="script.js"></script>

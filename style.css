@@ -18,9 +18,9 @@ ul {
   /* Colors */
 
   --dark: #0f241d;
-  --primary: #69b99d;
-  --hover: #94dfc4;
-  --secundary: #ccf4e6;
+  --primary: #663366;
+  --hover: #b39980;
+  --secundary: #8c6673;
   --gray: #767676;
   --light-gray: #e4e4e4;
   --background: #f9f9f9;
@@ -114,7 +114,7 @@ li {
 
 ul li a {
   color: var(--dark);
-  transition: .3s;
+  transition: 0.3s;
 }
 
 ul li a:hover {
@@ -173,6 +173,7 @@ nav {
 .img-home img {
   position: relative;
   width: 100%;
+  height: auto;
   border-radius: 0.25rem;
   right: 2.93rem;
 }
@@ -191,7 +192,6 @@ nav {
 
 .buttons:hover {
   background-color: var(--hover);
-  color: var(--dark);
 }
 
 #about .before-2 {
@@ -211,6 +211,7 @@ nav {
 
 #about .before-2 img {
   width: 100%;
+  height: auto;
   z-index: 1;
   border-radius: 0.25rem;
 }
@@ -264,20 +265,19 @@ nav {
   object-fit: cover;
 }
 
-
-.flex-testimonials p{
- font-size: 1rem;
- color: var(--gray);
- margin-left: 0.5rem;   
+.flex-testimonials p {
+  font-size: 1rem;
+  color: var(--gray);
+  margin-left: 0.5rem;
 }
 
-#footer span{
-    color: var(--text-button);
+#footer span {
+  color: var(--text-button);
 }
 
 #footer p {
-    color: var(--text-button);
-    margin-top: 1.5rem;
-    line-height: 2rem;
-    margin-bottom: 2rem;
+  color: var(--text-button);
+  margin-top: 1.5rem;
+  line-height: 2rem;
+  margin-bottom: 2rem;
 }
