@@ -1,0 +1,283 @@
+/* ============== Reset ======================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ============== Variáveis ======================= */
+
+:root {
+  font-size: 16px;
+
+  /* Colors */
+
+  --dark: #0f241d;
+  --primary: #69b99d;
+  --hover: #94dfc4;
+  --secundary: #ccf4e6;
+  --gray: #767676;
+  --light-gray: #e4e4e4;
+  --background: #f9f9f9;
+  --text-button: #f9f9f9;
+}
+
+/* ============== Base ======================= */
+
+body {
+  font-family: "DM Sans", sans-serif;
+  color: var(--gray);
+}
+
+main {
+  padding-top: 4.5rem;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.sections {
+  padding: 5rem 0;
+  border-bottom: 1px solid var(--secundary);
+}
+
+.titles {
+  font-family: "Poppins", sans-serif;
+  color: var(--dark);
+  font-weight: 700;
+  font-size: 1.87rem;
+}
+
+.general-text {
+  margin-top: 1rem;
+  color: var(--dark);
+  font-size: 1rem;
+}
+
+#footer {
+  background-color: var(--primary);
+  padding: 4rem 1.5rem;
+}
+
+.background {
+  background-color: var(--background);
+}
+
+.align-center {
+  text-align: center;
+}
+
+.none {
+  display: none;
+}
+
+.mg-1rem {
+  margin-top: 1rem;
+}
+.mg-1-5rem {
+  margin-top: 1.5rem;
+}
+.mg-2rem {
+  margin-top: 2rem;
+}
+/* ============== Menu ======================= */
+
+#menu {
+  position: fixed;
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--background);
+  top: 0;
+  left: 0;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+
+li {
+  margin-bottom: 2rem;
+}
+
+ul li a {
+  color: var(--dark);
+  transition: .3s;
+}
+
+ul li a:hover {
+  color: var(--primary);
+  border-bottom: 1px solid var(--primary);
+  padding-bottom: 1.5rem;
+}
+
+/* ============== Layout ======================= */
+
+#header {
+  position: fixed;
+
+  width: 100%;
+  height: 4.5rem;
+  border-bottom: 1px solid var(--light-gray);
+  z-index: 100;
+}
+
+nav {
+  width: 90%;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: var(--dark);
+  font-weight: 700;
+  font-size: 1.31rem;
+}
+
+.logo span {
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 1.31rem;
+}
+
+.img-home {
+  position: relative;
+}
+
+.img-home::before {
+  position: absolute;
+  content: "";
+  width: calc(100% - 2.93rem);
+  height: 100%;
+  left: 2.93rem;
+  top: -2.93rem;
+  background-color: var(--secundary);
+  border-radius: 0.25rem;
+}
+
+.img-home img {
+  position: relative;
+  width: 100%;
+  border-radius: 0.25rem;
+  right: 2.93rem;
+}
+
+.buttons {
+  display: inline-block;
+  background-color: var(--primary);
+  color: var(--text-button);
+  padding: 1rem 2rem;
+  text-align: center;
+  margin-top: 2rem;
+  border-radius: 0.25rem;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.buttons:hover {
+  background-color: var(--hover);
+  color: var(--dark);
+}
+
+#about .before-2 {
+  position: relative;
+}
+
+#about .before-2::before {
+  content: "";
+  position: absolute;
+  width: 70%;
+  height: 50%;
+  background-color: var(--secundary);
+  top: -2.93rem;
+  z-index: -1;
+  border-radius: 0.25rem;
+}
+
+#about .before-2 img {
+  width: 100%;
+  z-index: 1;
+  border-radius: 0.25rem;
+}
+
+.cards {
+  background-color: var(--background);
+  width: 100%;
+  margin-top: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  padding: 3.75rem 2rem;
+  border-bottom: 4px solid var(--primary);
+
+  box-shadow: 0px 0px 6px 0px rgba(201, 201, 201, 0.75);
+  -webkit-box-shadow: 0px 0px 6px 0px rgba(201, 201, 201, 0.75);
+  -moz-box-shadow: 0px 0px 6px 0px rgba(201, 201, 201, 0.75);
+}
+
+.testimonials-card {
+  width: 100%;
+  margin-top: 4rem;
+  padding: 2rem;
+
+  box-shadow: 0px 0px 6px 0px rgba(201, 201, 201, 0.75);
+  -webkit-box-shadow: 0px 0px 6px 0px rgba(201, 201, 201, 0.75);
+  -moz-box-shadow: 0px 0px 6px 0px rgba(201, 201, 201, 0.75);
+}
+
+.testimonials-text {
+  font-size: 1rem;
+  color: var(--dark);
+  font-weight: 500;
+}
+
+.flex-testimonials {
+  display: flex;
+  margin-top: 1.5rem;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.flex-testimonials img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100px;
+  object-fit: cover;
+}
+
+
+.flex-testimonials p{
+ font-size: 1rem;
+ color: var(--gray);
+ margin-left: 0.5rem;   
+}
+
+#footer span{
+    color: var(--text-button);
+}
+
+#footer p {
+    color: var(--text-button);
+    margin-top: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+}
