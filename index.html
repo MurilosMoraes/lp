@@ -37,16 +37,19 @@
             <a class="logo" href="#">
                 Panda<span>Apps.</span>
             </a>
-            <div onclick="openNav()" class="icon-menu"></div>
             <div id="menu">
-                <ul onclick="closeNav()">
-                    <li class="titles"><a href="#home">Início</a></li>
-                    <li class="titles"><a href="#about">Sobre</a></li>
-                    <li class="titles"><a href="#services">Serviços</a></li>
-                    <li class="titles"><a href="#testimonials">Depoimentos</a></li>
-                    <li class="titles"><a href="#contact">Contato</a></li>
+                <div onclick="closeNav()" class="icon-close"></div>
+
+                <ul>
+                    <li onclick="closeNav()" class="titles"><a href="#home">Início</a></li>
+                    <li onclick="closeNav()" class="titles"><a href="#about">Sobre</a></li>
+                    <li onclick="closeNav()" class="titles"><a href="#services">Serviços</a></li>
+                    <li onclick="closeNav()" class="titles"><a href="#testimonials">Depoimentos</a></li>
+                    <li onclick="closeNav()" class="titles"><a href="#contact">Contato</a></li>
                 </ul>
             </div>
+
+            <div onclick="openNav()" class="icon-menu"></div>
 
         </nav>
     </header>
@@ -62,7 +65,7 @@
                     Saúde natural para os seus cabelos
                 </h1>
 
-                <p class="general-text">
+                <p class="general-text mg-1rem">
                     Um salão exclusivo em São Paulo, especializado em tratamentos naturais.
                 </p>
 
@@ -79,7 +82,7 @@
             <div class="container ">
                 <h2 class="titles mg-2rem">Sobre nós</h2>
 
-                <p class="general-text">
+                <p class="general-text mg-1rem">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sagittis arcu quis nisi luctus,
                     id
                     accumsan
@@ -119,30 +122,31 @@
                     Serviços
                 </h2>
 
-                <p style="margin-bottom: 4rem;" class="general-text">Com mais de 10 anos no mercado, o Beautysalon já
+                <p style="margin-bottom: 4rem;" class="general-text mg-1rem">Com mais de 10 anos no mercado, o
+                    Beautysalon já
                     conquistou clientes de inúmeros
                     países com seus tratamentos exclusivos e totalmente naturais</p>
-
 
                 <div class="cards">
                     <div class="icon-woman-hair"></div>
 
                     <h2 class="titles mg-1-5rem">Terapia capilar</h2>
 
-                    <p class="general-text">Terapia completa para couro cabeludo e fios, protegendo todos os tipos de
+                    <p class="general-text mg-1rem">Terapia completa para couro cabeludo e fios, protegendo todos os
+                        tipos de
                         cabelos,
                         inclusive os longos e
                         finos.
                     </p>
                 </div>
 
-
                 <div class="cards">
                     <div class="icon-trim"></div>
 
                     <h2 class="titles mg-1-5rem">Cortes</h2>
 
-                    <p class="general-text">A nossa equipe é repleta de profissionais renomados, famosos por lançarem
+                    <p class="general-text mg-1rem">A nossa equipe é repleta de profissionais renomados, famosos por
+                        lançarem
                         tendências
                         com cortes
                         diferenciados
@@ -155,7 +159,8 @@
 
                     <h2 class="titles mg-1-5rem">Tratamentos</h2>
 
-                    <p class="general-text">O beautysalon conta com diversos tratamentos naturais e totalmente veganos,
+                    <p class="general-text mg-1rem">O beautysalon conta com diversos tratamentos naturais e totalmente
+                        veganos,
                         para
                         qualquer tipo
                         de cabelo.</p>
@@ -163,30 +168,29 @@
             </div>
         </section>
 
-        <section class="sections container" id="testimonials">
-            <h2 class="titles">Depoimentos de quem já passou
-                por aqui</h2>
-            <div class="testimonials-card">
-                <p class="testimonials-text">
-                    <span>"</span> Eu sou cliente do Beautysalon há 5 anos e não troco por
-                    nada! Certamente
-                    meu cabelo mudou muito
-                    depois que comecei a tratar somente com produtos
-                    naturais e veganos. São profissionais incríveis e
-                    qualificados. <span class="quotation ">"</span>
+        <section class="sections" id="testimonials">
+            <div class="container">
+                <h2 class="titles">Depoimentos de quem já passou
+                    por aqui</h2>
+                <div class="testimonials-card">
+                    <p class="testimonials-text">
+                        <span>"</span> Eu sou cliente do Beautysalon há 5 anos e não troco por
+                        nada! Certamente
+                        meu cabelo mudou muito
+                        depois que comecei a tratar somente com produtos
+                        naturais e veganos. São profissionais incríveis e
+                        qualificados. <span class="quotation ">"</span>
 
-                </p>
+                    </p>
 
-                <div class="flex-testimonials">
-                    <img src="./assets/imgs/eu.jpg" alt="Foto de usuário">
+                    <div class="flex-testimonials">
+                        <img src="./assets/imgs/eu.jpg" alt="Foto de usuário">
 
-                    <p>Murilo Moraes</p>
+                        <p>Murilo Moraes</p>
+                    </div>
                 </div>
 
-
             </div>
-
-
 
         </section>
 
@@ -197,12 +201,16 @@
                 <h2 class="titles">Entre em contato
                     com a gente!</h2>
 
-                <p class="general-text">Entre em contato com a Beautysalon, queremos tirar suas dúvidas, ouvir suas
+                <p class="general-text mg-1rem">Entre em contato com a Beautysalon, queremos tirar suas dúvidas, ouvir
+                    suas
                     críticas
                     e sugestões.</p>
 
                 <a target="_blank" rel="noreferrer" class="buttons" href="https://google.com">
-                    Entrar em contato</a>
+                    <div class="icon-whatsapp"></div>
+                    Entrar em contato
+                </a>
+
 
                 <div class="contatos">
 
@@ -222,7 +230,7 @@
 
                     <div class="flex-testimonials">
                         <div class="icon-mail"></div>
-                        <p style="margin: 0;" class="general-text">
+                        <p class="general-text">
                             contato@beautysalon.com
                         </p>
                     </div>
@@ -236,16 +244,30 @@
 
 
     <footer id="footer">
-        <h2>Panda<span>Apps</span>.</h2>
+        <div class="container">
+            <h2>Panda<span>Apps</span>.</h2>
 
-        <p>
-            ©2022 PandaApps.
-            <br>
-            Todos os direitos reservados.
-        </p>
-        <div class="icon-instagram"></div>
-        <div class="icon-facebook"></div>
-        <div class="icon-youtube"></div>
+            <p>
+                ©2022 PandaApps.
+                <br>
+                Todos os direitos reservados.
+            </p>
+            <div class="flex-icons-bottom">
+                <a href="https://www.instagram.com" target="_blank" rel="noreferrer">
+                    <div class="icon-instagram"></div>
+                </a>
+
+                <a href="https://www.facebook.com" target="_blank" rel="noreferrer">
+                    <div class="icon-facebook"></div>
+                </a>
+
+                <a href="https://www.youtube.com" target="_blank" rel="noreferrer">
+                    <div class="icon-youtube"></div>
+                </a>
+
+            </div>
+
+        </div>
     </footer>
 
     <script src="script.js"></script>

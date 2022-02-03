@@ -56,7 +56,6 @@ main {
 }
 
 .general-text {
-  margin-top: 1rem;
   color: var(--dark);
   font-size: 1rem;
 }
@@ -275,15 +274,90 @@ nav {
   color: var(--text-button);
 }
 
-
 #footer h2 {
   color: var(--text-button);
 }
-
 
 #footer p {
   color: var(--text-button);
   margin-top: 1.5rem;
   line-height: 2rem;
   margin-bottom: 2rem;
+}
+
+.icon-menu {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--primary);
+}
+
+.icon-close {
+  font-size: 1.5rem;
+  color: var(--primary);
+  cursor: pointer;
+  position: absolute;
+  right: 1.5rem;
+  top: 1.5rem;
+}
+
+.icon-woman-hair {
+  color: var(--primary);
+  font-size: 5rem;
+}
+
+.icon-trim {
+  color: var(--primary);
+  font-size: 5rem;
+}
+
+.icon-cosmetic {
+  color: var(--primary);
+  font-size: 5rem;
+}
+
+#contact a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-whatsapp {
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.icon-phone {
+  font-size: 1.5rem;
+  color: var(--primary);
+}
+
+.icon-map-pin {
+  font-size: 1.5rem;
+  color: var(--primary);
+}
+
+.icon-mail {
+  font-size: 1.5rem;
+  color: var(--primary);
+}
+
+.flex-icons-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.icon-instagram {
+  font-size: 1.5rem;
+  color: var(--light-gray);
+}
+.icon-facebook {
+  font-size: 1.5rem;
+  color: var(--light-gray);
+  margin-left: 1rem;
+}
+.icon-youtube {
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  color: var(--light-gray);
 }
